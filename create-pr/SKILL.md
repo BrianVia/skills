@@ -186,7 +186,8 @@ EOF
 
 After creating the PR:
 1. Output the PR URL
-2. If this is a **Dfinitiv repository** (org: `dfinitiv`, or repo names like `savvy-*`, `mojo-*`, etc.), proceed to Phase 7. Otherwise, you're done.
+2. If this is a **Dfinitiv repository** (org: `dfinitiv`, or repo names like `savvy-*`, `mojo-*`, etc.), proceed to Phase 7.
+3. Otherwise, skip to Phase 8.
 
 ## Phase 7: Watch for Automated Review Feedback (Dfinitiv repos only)
 
@@ -215,6 +216,15 @@ Dfinitiv repositories have automated code review bots/agents that post feedback 
    - Optionally loop back to step 1 if the changes were significant enough to trigger another round of bot feedback (use judgement — one loop max)
 
 5. **Report back** with a summary of what feedback was received and what you did about it.
+
+## Phase 8: Hand Off to Babysit
+
+Unless the user explicitly said not to babysit (e.g., "just create the PR", "no babysit", "skip babysit"), invoke the `/babysit-pr` skill with the PR number to begin monitoring CI and review comments.
+
+Before handing off, tell the user:
+> "PR created. Starting babysit-pr to monitor CI and reviews — I'll fix what I can and flag anything I need your help on. Say 'stop' anytime to end monitoring."
+
+If the user opted out, just print the PR URL and you're done.
 
 ## Hard Rules
 

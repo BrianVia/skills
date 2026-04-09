@@ -86,17 +86,15 @@ Then produce a clean standup summary:
 ### Standup — [Today's Date]
 
 **What I did:**
-- [Group related commits, PRs, and Linear tickets into logical work items]
-- [Include ticket identifiers where applicable, e.g. "STUDIO-324: Allow editing users in staging — Done"]
-- [Call out any PRs that were merged]
+- [One bullet per logical work item — a commit, its PR, and its Linear ticket for the SAME work belong together on one line]
+- [But NEVER combine separate tickets or unrelated PRs onto a single line — each distinct work item gets its own bullet]
+- [Include ticket identifiers where applicable, e.g. "STUDIO-324: Allow editing users in staging — PR #42 merged, Done"]
 
 **In progress:**
-- [Open PRs awaiting review]
-- [Linear tickets currently In Progress or In Review]
+- [One bullet per open PR or active ticket — never combine multiple on one line]
 
 **Blockers / Notes:**
-- [Any PRs with changes requested]
-- [Any draft PRs that need attention]
+- [One bullet per item]
 - [Leave empty if none]
 
-Keep it concise — this is for a 60-second verbal update at the 9:30 standup. No fluff. Use ticket identifiers (STUDIO-XXX, PLAT-XXX, PUB-XXX) wherever possible. If a commit clearly maps to a Linear ticket, group them together rather than listing separately.
+Keep it concise — this is for a 60-second verbal update at the 9:30 standup. No fluff. Use ticket identifiers (STUDIO-XXX, PLAT-XXX, PUB-XXX) wherever possible. A commit + its PR + its ticket = one bullet. Two separate tickets = two bullets. Never stack unrelated items on one line.
